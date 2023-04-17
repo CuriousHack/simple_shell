@@ -39,9 +39,9 @@ extern char **environ;
 
 /**
  * struct liststr - singly linked list
- * @num: the number field
+ * @num:  numbe field
  * @str: a string
- * @next: points to the next node
+ * @next: point the next node
  */
 typedef struct liststr
 {
@@ -51,26 +51,26 @@ typedef struct liststr
 } list_t;
 
 /**
- * struct passinfo - contains pseudo-arguements to pass into a function,
- * allowing uniform prototype for function pointer struct
- * @arg: a string generated from getline containing arguements
- * @argv:an array of strings generated from arg
- * @path: a string path for the current command
+ * struct passinfo - this contain pseudo-arguements to pass to the function,
+ * allowing uniform prototype for function pointer structure
+ * @arg: The strings generated from the getline containing arguements
+ * @argv:This is an array of strings generated from arg
+ * @path: the string path for the current command
  * @argc: the argument count
  * @line_count: the error count
- * @err_num: the error code for exit()s
+ * @err_num: the error code for the exit()s
  * @linecount_flag: if on count this line of input
- * @fname: the program filename
+ * @fname: the program filenames
  * @env: linked list local copy of environ
  * @environ: custom modified copy of environ from LL env
  * @history: the history node
  * @alias: the alias node
  * @env_changed: on if environ was changed
- * @status: the return status of the last exec'd command
- * @cmd_buf: address of pointer to cmd_buf, on if chaining
+ * @status: to the return status of the last exec'd command
+ * @cmd_buf: address of the pointer to cmd_buf, on if chaining
  * @cmd_buf_type: CMD_type ||, &&, ;
  * @readfd: the fd from which to read line input
- * @histcount: the history line number count
+ * @histcount: the history line numbr counts
  */
 typedef struct passinfo
 {
@@ -101,7 +101,7 @@ typedef struct passinfo
 
 /**
  * struct builtin - contains a builtin string and related function
- * @type: the builtin command flag
+ * @type: the builtin command flags
  * @func: the function
  */
 typedef struct builtin
