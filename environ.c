@@ -91,7 +91,7 @@ int populate_env_list(info_t *info)
 	return (0);
 }
 /*
- * File: builtin.c
+ * File: environ.c
  * Auth: Ademoroti Olusola(94sola)
  *      Akande lateef(CuriousHack)
  */
